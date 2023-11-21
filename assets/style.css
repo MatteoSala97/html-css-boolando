@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 body{
     height: 5000px;
@@ -35,14 +35,17 @@ header a{
 }
 .container{
     display: flex;
+    margin: 40px;
 }
 
 main div{
     margin: 0 auto;
 }
+
 .card{
     width: fit-content;
     overflow: hidden;
+    position: relative;
 }
 
 .card img{
@@ -68,4 +71,52 @@ nav div p span{
     color: black;
     font-weight: normal;
     text-decoration: line-through;
+}
+
+.card button {
+    position: absolute;
+    right: 0;
+    top: 10px;
+
+    font-size: 30px;
+    background-color: white;
+    padding: 10px;
+    border: 0;
+}
+
+.card button:hover{
+    color: red;
+}
+
+.discount,
+.eco-friendly,
+.alone{
+    color: white;
+    font-weight: bold;
+}
+
+.discount{
+    position: absolute;
+    background-color: red;
+    padding: 3px;
+
+    left: 0;
+    bottom: 30px;
+}
+
+.eco-friendly{
+    position: absolute;
+    background-color: green;
+    padding: 3px;
+
+    left: 50px;
+    bottom: 30px;
+}
+.alone{
+    position: absolute;
+    background-color: green;
+    padding: 3px;
+    
+    left: 0;
+    bottom: 30px;
 }
