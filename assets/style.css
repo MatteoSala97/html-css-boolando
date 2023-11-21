@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 
-    border: 1px dashed black;
+    border: 1px solid black;
 }
-
+body{
+    height: 5000px;
+}
 html{
     font-family: sans-serif;
 }
@@ -17,6 +19,8 @@ header{
     align-items: center;
     padding: 10px;
     box-shadow: 0px 4px 9px 1px rgba(0,0,0,0.6);
+
+    margin-bottom: 30px;
 }
 
 header a{
@@ -33,9 +37,16 @@ header a{
 main div{
     display: flex;
     width: 80%;
+    margin: 0 auto;
 }
+
 .card{
-    background-color: lightblue ;
-    width: 150px;
-    height: 150px;
+    width: calc(100%/3);
+    background-color: lightblue;
+    margin-inline: 10px;
+    overflow: hidden;
+}
+.card img{
+    width: 60%;
+    /* height: auto; */
 }
