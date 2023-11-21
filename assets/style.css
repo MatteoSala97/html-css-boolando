@@ -33,20 +33,39 @@ header a{
     height: 50px;
     padding: 5px;
 }
+.container{
+    display: flex;
+}
 
 main div{
-    display: flex;
-    width: 80%;
     margin: 0 auto;
 }
-
 .card{
-    width: calc(100%/3);
-    background-color: lightblue;
-    margin-inline: 10px;
+    width: fit-content;
     overflow: hidden;
 }
+
 .card img{
-    width: 60%;
-    /* height: auto; */
+    width: 300px;
+}
+
+nav div p:first-child{
+    text-transform: capitalize;
+}
+
+nav div p:nth-of-type(even){
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+nav div p:last-child{
+    color: red;
+    font-weight: bold;
+}
+
+nav div p span{
+    color: black;
+    font-weight: normal;
+    text-decoration: line-through;
 }
