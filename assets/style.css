@@ -5,9 +5,11 @@
 
     /* border: 1px solid black; */
 }
-body{
+
+/* body{
     height: 5000px;
-}
+} */
+
 html{
     font-family: sans-serif;
 }
@@ -133,3 +135,14 @@ nav div p span{
 .card:hover .image-overlay {
     opacity: 1;
 }
+
+footer{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+}
+
+
