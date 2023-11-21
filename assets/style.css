@@ -6,9 +6,6 @@
     /* border: 1px solid black; */
 }
 
-/* body{
-    height: 5000px;
-} */
 
 html{
     font-family: sans-serif;
@@ -17,6 +14,7 @@ html{
 header{
     display: flex;
     justify-content: space-around;
+    
     background-color: #e77200;
     align-items: center;
     padding: 10px;
@@ -31,10 +29,21 @@ header a{
     font-weight: bold;
 }
 
+header .logo svg {
+    fill: white;
+}
+
+
 .logo{
     height: 50px;
     padding: 5px;
 }
+
+div .logo{
+    background-color:#e77200;
+    fill: white;
+}
+
 .container{
     display: flex;
     margin: 40px;
@@ -145,4 +154,8 @@ footer{
     padding: 20px;
 }
 
-
+footer div img{
+    width: 20px;
+    background-color: white;
+    filter: invert(1) grayscale(100%);
+}
