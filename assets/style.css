@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    border: 1px dashed black;
 }
 
 html{
@@ -28,3 +30,12 @@ header a{
     padding: 5px;
 }
 
+main div{
+    display: flex;
+    width: 80%;
+}
+.card{
+    background-color: lightblue ;
+    width: 150px;
+    height: 150px;
+}
