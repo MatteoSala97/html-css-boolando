@@ -6,7 +6,6 @@
     /* border: 1px solid black; */
 }
 
-
 html{
     font-family: sans-serif;
 }
@@ -14,13 +13,23 @@ html{
 header{
     display: flex;
     justify-content: space-around;
-    
+    position: fixed;
+    top:0;
+    z-index: 2;
+    width: 100%;
+
     background-color: #e77200;
     align-items: center;
     padding: 10px;
     box-shadow: 0px 4px 9px 1px rgba(0,0,0,0.6);
 
     margin-bottom: 30px;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
 }
 
 header a{
@@ -34,13 +43,13 @@ header a{
     padding: 5px;
 }
 
-div .logo{
-    fill: white;
-}
-
 .container{
     display: flex;
     margin: 40px;
+}
+
+main{
+    margin-top: 150px;
 }
 
 main div{
@@ -127,6 +136,7 @@ nav div p span{
     bottom: 30px;
 }
 
+/* next two lines are used for the hidden img under each card */
 .image-overlay {
     position: absolute;
     top: 0;
@@ -148,8 +158,18 @@ footer{
     padding: 20px;
 }
 
-footer div img{
-    width: 20px;
-    background-color: white;
-    filter: invert(1) grayscale(100%);
+footer div{
+    padding-block: 10px;
+    margin-inline: 100px;
+}
+
+footer ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+footer div ul li a{
+    color: white;
+    text-decoration: none;
 }
